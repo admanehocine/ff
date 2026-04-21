@@ -10,12 +10,12 @@ pipeline {
         choice(name: 'Tags', choices: ['@e2e', '@smoke', '@login'], description: 'Choisissez le choix de tag')
     }
     stages {
-        stage('Example') {
+        stage('Example 1') {
             steps {
                 sh 'npm install'
             }
         }
-        stage('Example') {
+        stage('Example 2') {
             steps {
                 
                 script{
