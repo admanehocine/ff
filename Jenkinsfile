@@ -12,6 +12,11 @@ pipeline {
     stages {
         stage('Example') {
             steps {
+                sh 'npm install'
+            }
+        }
+        stage('Example') {
+            steps {
                 
                 script{
                     if (params.istags == true){
