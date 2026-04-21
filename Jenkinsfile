@@ -15,9 +15,9 @@ pipeline {
                 
                 script{
                     if (params.istags == true){
-                        echo "npx playwright test --grep ${params.Tags}"
+                        sh "npx playwright test --grep ${params.Tags}"
                     }else {
-                        echo "npx playwright test"
+                        sh "npx playwright test"
                     }
                 }    
             }
